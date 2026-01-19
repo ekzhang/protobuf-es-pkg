@@ -1,6 +1,6 @@
 # onnx-buf
 
-This is an NPM package containing a lightweight compiled version of [`onnx.proto3`](https://github.com/onnx/onnx/blob/main/onnx/onnx.proto3) for JavaScript using [`@bufbuild/protobuf`](https://github.com/bufbuild/protobuf-es).
+This is an NPM package containing a lightweight compiled version of [`onnx.proto`](https://github.com/onnx/onnx/blob/main/onnx/onnx.proto) for JavaScript using [`@bufbuild/protobuf`](https://github.com/bufbuild/protobuf-es).
 
 It can be imported and run from Node.js and Web.
 

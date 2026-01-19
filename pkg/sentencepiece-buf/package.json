@@ -1,9 +1,9 @@
 {
-  "name": "onnx-buf",
-  "version": "1.20.0-1",
-  "description": "Compiled Protobuf definitions for ONNX files",
+  "name": "sentencepiece-buf",
+  "version": "0.2.1-0",
+  "description": "Compiled Protobuf definitions for SentencePiece files",
   "keywords": [
-    "onnx",
+    "sentencepiece",
     "protobuf"
   ],
   "author": {
@@ -19,9 +19,19 @@
   "files": [
     "/dist/*.{js,d.ts}"
   ],
-  "main": "dist/onnx_pb.js",
-  "types": "dist/onnx_pb.d.ts",
-  "module": "dist/onnx_pb.js",
+  "main": "dist/sentencepiece_pb.js",
+  "types": "dist/sentencepiece_pb.d.ts",
+  "module": "dist/sentencepiece_pb.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sentencepiece_pb.js",
+      "types": "./dist/sentencepiece_pb.d.ts"
+    },
+    "./model": {
+      "import": "./dist/sentencepiece_model_pb.js",
+      "types": "./dist/sentencepiece_model_pb.d.ts"
+    }
+  },
   "license": "MIT",
   "scripts": {
     "build": "buf generate && perl -pi -e 's/Uint8Array(?!<)/Uint8Array<ArrayBuffer>/g' dist/*.d.ts",

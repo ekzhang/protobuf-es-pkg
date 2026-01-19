@@ -1,0 +1,15 @@
+version: v2
+inputs:
+  - git_repo: https://github.com/google/sentencepiece.git
+    tag: v0.2.1
+    subdir: src
+    paths:
+      - sentencepiece.proto
+      - sentencepiece_model.proto
+plugins:
+  - local: protoc-gen-es
+    out: dist
+    opt:
+      - target=js+dts
+      - import_extension=js
+      - js_import_style=module
