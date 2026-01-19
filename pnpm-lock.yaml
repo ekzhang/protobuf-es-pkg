@@ -6,7 +6,7 @@ settings:
 
 importers:
 
-  .:
+  pkg/onnx-buf:
     dependencies:
       '@bufbuild/protobuf':
         specifier: ^2.10.2

@@ -1,2 +1,5 @@
+packages:
+  - "pkg/*"
+
 ignoredBuiltDependencies:
-  - '@bufbuild/buf'
+  - "@bufbuild/buf"
